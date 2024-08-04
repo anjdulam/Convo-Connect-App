@@ -8,9 +8,9 @@ let timeOnline = {}
 export const connectToSocket = (server) => {
     const io = new Server(server, {
         cors: {
-            origin: "*",
+            origin: "https://convo-connect-app.onrender.com",
             methods: ["GET", "POST"],
-            allowedHeaders: ["*"],
+            allowedHeaders: ["Content-Type"],
             credentials: true
         }
     });
